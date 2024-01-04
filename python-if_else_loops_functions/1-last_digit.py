@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 import random
 number = random.ranint(-10000, 10000)
+
 if number > 0:
-    last_digit = abs(number) % -10
+    last_digit = -(abs(number) % 10)
 else:
     last_digit = abs(number) % 10
 
