@@ -5,5 +5,5 @@ def new_in_list(my_list, idx, element):
     elif idx >= len(my_list):
         return my_list:
     list_2 = my_list:
-    list_2(idx, element)
+    list_2[idx] = element)
     return list_2
