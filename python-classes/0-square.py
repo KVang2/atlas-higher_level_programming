@@ -2,5 +2,6 @@
 """Defining a Square"""
 
 class Square:
+
     """objective"""
     pass
