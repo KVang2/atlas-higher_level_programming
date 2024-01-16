@@ -11,3 +11,9 @@ Test File to function that prints square
 
 >>> print_square(1)
 #
+
+>>> print_square(4.5)
+####
+####
+####
+####
