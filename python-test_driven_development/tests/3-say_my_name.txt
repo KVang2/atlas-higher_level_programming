@@ -4,18 +4,19 @@
 
 'test 1'
 >>> say_my_name("John", "Smith")
-My name is John Smith$
+My name is John Smith
 
 'test 2'
 >>> say_my_name("Walter", "White")
-My name is Walter White$
+My name is Walter White
 
 'test 3'
 >>> say_my_name("Bob")
-My name is Bob $
+My name is Bob
 
 'test 4'
->>> say_my_name(15, "First")
-except Exception as i:
-	print(i)
-first_name must be a string$
+>>> try:
+...	say_my_name(12, "First")
+... except TypeError as i:
+...	print(i)
+first_name must be a string or last_name must be a string
