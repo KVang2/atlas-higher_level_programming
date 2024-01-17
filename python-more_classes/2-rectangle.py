@@ -2,7 +2,7 @@
 """Rectangle class that defines area and perimeter"""
 
 
-class Retangle:
+class Rectangle:
     """ Defines a Rectangle"""
     def __init__(self, width=0, height=0):
         self.width = width
