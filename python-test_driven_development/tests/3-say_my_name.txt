@@ -19,4 +19,4 @@ My name is Bob
 ...	say_my_name(12, "White")
 ... except TypeError as e:
 ...	str(e)
-first_name must be a string
+first_name must be a string or last_name must be a string
