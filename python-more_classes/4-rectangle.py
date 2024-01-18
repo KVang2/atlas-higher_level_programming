@@ -54,5 +54,5 @@ class Rectangle:
 
     def __repr__(self):
         """Method of retruning a string"""
-        return "Rectangle({}, {})\n".format(self.__width, self.__height)
+        return "Rectangle({}, {})".format(self.__width, self.__height)
 
