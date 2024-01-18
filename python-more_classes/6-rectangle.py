@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Rectangle Detect instance deletion"""
+"""Rectangle How Many Instances"""
 
 
 class Rectangle:
