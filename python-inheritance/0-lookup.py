@@ -2,6 +2,6 @@
 """Function that returns list of availabe attrbutes and methods"""
 
 
-def look(obj):
+def lookup(obj):
     """Returning list object"""
     return dir(obj)
