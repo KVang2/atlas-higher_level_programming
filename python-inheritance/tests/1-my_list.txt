@@ -1,5 +1,5 @@
 '''
->>> Mylist = __import("1-my_list").MyList
+>>> Mylist = __import__("1-my_list").MyList
 
 #list of numbers
 >>> my_list = MyList()
