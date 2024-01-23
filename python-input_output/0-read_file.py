@@ -3,6 +3,14 @@
 
 
 def read_file(filename=""):
-    """READ TEXT FILE"""
-    with open(filename, encoding="utf-8") as file:
+    """READ TEXT FILE
+    args:
+        Filename (str): Name of text file.
+    Returns:
+        None
+    """
+    with open(filename, 'r', encoding="utf-8") as file:
         print(file.read(), end="")
+
+if __name__ == "__main__":
+    read_file("my_file_0.txt")
