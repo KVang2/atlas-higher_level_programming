@@ -5,6 +5,7 @@
 def append_write(filename="", text=""):
     """Write a string to UTF8"""
 
+    lines = 0
     with open(filename) as file:
         for line in file:
             line += 1
