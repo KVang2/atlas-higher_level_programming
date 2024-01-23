@@ -2,7 +2,6 @@
 
 if __name__ == "__main__":
 
-# Test case 1:
 >>> my_list = [6, 12, 24]
 >>> s_my_list = to_json_string(my_list)
 >>> print(s_my_list)
