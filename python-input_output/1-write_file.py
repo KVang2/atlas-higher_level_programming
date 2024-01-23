@@ -3,8 +3,13 @@
 
 
 def append_write(filename="", text=""):
-    """Write a string to UTF8"""
-
+    """Write a string to UTF8
+    Args:
+        filename: Name of file
+    
+    Returns:
+        written characters
+    """
     with open(filename, 'w', encoding='utf-8') as file:
         text_infile = file.write(text)
     return text_infile
