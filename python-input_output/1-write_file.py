@@ -6,7 +6,7 @@ def write_file(filename="", text=""):
     """Write a string to UTF8
     Args:
         filename: Name of file
-    
+
     Returns:
         written characters
     """
