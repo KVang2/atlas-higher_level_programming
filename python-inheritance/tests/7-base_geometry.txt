@@ -1,11 +1,10 @@
 '''
-#BaseGemetry test
+# BaseGemetry test
 
 >>> BaseGeometry = __import__('7-base_geometry").BaseGeometry
-
-#Int
 >>> bg = BaseGeometry()
 
+# Test 1
 >>> bg.integer_validator("my_int", 42)
 >>> bg.integer_validator("width", 54)
 
