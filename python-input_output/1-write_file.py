@@ -12,4 +12,4 @@ def append_write(filename="", text=""):
 
 if __name__ == "__main__":
     write_file("my_first_file.txt", "School is alright!\n")
-    return write_file
+    print(write_file)
