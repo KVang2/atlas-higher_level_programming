@@ -11,10 +11,10 @@ def append_write(filename="", text=""):
         written characters
     """
     with open(filename, 'w', encoding='utf-8') as file:
-        text_infile = file.write(text)
-    return text_infile
+        nb_characters = file.write(text)
+    return nb_characters
 
 
 if __name__ == "__main__":
-    text_infile = write_file("my_first_file.txt", "School is alright!\n")
-    print(text_infile)
+    nb_characters = write_file("my_first_file.txt", "School is alright!\n")
+    print(nb_characters)
