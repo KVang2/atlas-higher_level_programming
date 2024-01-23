@@ -6,9 +6,10 @@ def append_write(filename="", text=""):
     """Write a string to UTF8"""
 
     with open(filename, 'w', encoding='utf-8') as file:
-    return file.write(text)
+        text_infile = file.write(text)
+    return text_infile
 
 
 if __name__ == "__main__":
-    nb_characters = write_file("my_first_file.txt", "School is alright!\n")
-    print(nb_characters)
+    text_infile = write_file("my_first_file.txt", "School is alright!\n")
+    print(text_infile)
