@@ -10,7 +10,7 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-    """dictionary representation of a student"""
+        """dictionary representation of a student"""
         if attrs is None and all(isinstance(attr, str) for attr in attrs):
             return {
                 "first_name": self.first_name,
