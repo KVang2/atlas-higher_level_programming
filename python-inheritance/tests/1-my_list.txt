@@ -1,6 +1,7 @@
 # Test for file 1:
 
->>> from my_list = import MyList
+# Import the MyList class directly
+>>> from my_list import MyList
 
 # list of numbers
 >>> my_list = MyList()
@@ -15,9 +16,10 @@
 >>> my_list.append('this is a string')
 >>> my_list.append('Test1')
 >>> my_list.append('test my string')
-['this is a string', 'Test1', 'test my string']
+>>> my_list.print_sorted()
+['Test1', 'test my string', 'this is a string']
 
-# Test for empty list
+# Test for an empty list
 >>> my_list = MyList()
 >>> my_list.print_sorted()
 []
