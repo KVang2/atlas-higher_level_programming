@@ -9,13 +9,13 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-def to_json(self, attrs=None):
+    def to_json(self, attrs=None):
     """dictionary representation of a student"""
-    if attrs is None and all(isinstance(attr, str) for attr in attrs):
-        return {
-            "first_name": self.first_name,
-            "last_name": self.last_name,
-            "age": self.age
+        if attrs is None and all(isinstance(attr, str) for attr in attrs):
+            return {
+                "first_name": self.first_name,
+                "last_name": self.last_name,
+                "age": self.age
         }
-    else:
-        return {attr: getattr(self, attr) for attr in attrs if hasattr(self, attr)}
+        else:
+            return {attr: getattr(self, attr) for attr in attrs if hasattr(self, attr)}
