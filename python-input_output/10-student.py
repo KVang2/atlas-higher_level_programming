@@ -18,5 +18,7 @@ class Student:
                 "age": self.age
             }
          else:
-             result_dict = {attr: getattr(self, attr)for attr in attrs if hasattr(self, attr)}
-             return result_dict
+             return {
+                attr: getattr(self, attr)
+                for attr in attrs
+                if hasattr(self, attr)}
