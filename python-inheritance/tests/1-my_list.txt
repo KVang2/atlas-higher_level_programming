@@ -1,9 +1,8 @@
-'''
 # Test for file 1:
 
 >>> Mylist = __import__("1-my_list").MyList
 
-#list of numbers
+# list of numbers
 >>> my_list = MyList()
 >>> my_list.append(4)
 >>> my_list.append(8)
@@ -22,4 +21,9 @@
 >>> my_list = MyList()
 >>> my_list.print_sorted()
 []
-'''
+
+# Sorted list
+>>> print(my_list)
+[1, 14, 26, 7]
+>>> my_list.print_sorted()
+[1, 7, 14, 26]
