@@ -11,7 +11,7 @@ class Student:
 
 def to_json(self, attrs=None):
     """dictionary representation of a student"""
-    if attrs is None:
+    if attrs is None and all(isinstance(attr, str) for attr in attrs):
         return {
             "first_name": self.first_name,
             "last_name": self.last_name,
