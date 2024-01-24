@@ -1,4 +1,6 @@
 '''
+# Test for file 1:
+
 >>> Mylist = __import__("1-my_list").MyList
 
 #list of numbers
@@ -9,10 +11,15 @@
 >>> my_list.print_sorted()
 [4, 8, 10]
 
-#list of strings
+# list of strings
 >>> my_list = MyList()
 >>> my_list.append('this is a string')
 >>> my_list.append('Test1')
 >>> my_list.append('test my string')
 ['this is a string', 'Test1', 'test my string']
+
+# Test for empty list
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+
 '''
