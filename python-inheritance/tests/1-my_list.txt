@@ -1,8 +1,5 @@
 # Test for file 1:
 
-# Import the MyList class directly
->>> from my_list import MyList
-
 # list of numbers
 >>> my_list = MyList()
 >>> my_list.append(4)
