@@ -1,8 +1,18 @@
 #!/usr/bin/python3
 """A script that adds all arguments to a python list, then save"""
 import sys
-from save_to_json_file = import ('5-save_to_json_file').save_to_json_file
-from load_from_json_file = import ('6-load_from_json_file')
+import json
+
+
+def save_to_json_file(my_obj, filename):
+    """Saving json file"""
+    with open(filename, 'w') as file:
+        json.dump(my_obj, file)
+
+def load_from_json_file(filename):
+    """Open load from json file"""
+    with open(filename, 'r', encoding='utf-8') as file:
+        return json.load(file)
 
 filename = 'add_item.json'
 my_list = []
@@ -10,4 +20,4 @@ my_list = []
 for arg in sys.argv[1:]:
     my_list.append(arg)
 
-save_to_json_file(my_lists, filename)
+save_to_json_file(my_list, filename)
