@@ -1,6 +1,6 @@
 # Test for file 1:
 
->>> from mylist = import MyList
+>>> from my_list = import MyList
 
 # list of numbers
 >>> my_list = MyList()
