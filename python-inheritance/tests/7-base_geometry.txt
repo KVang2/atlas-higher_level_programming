@@ -1,7 +1,7 @@
 # BaseGeometry test
 
 # Import the BaseGeometry class directly
->>> from base_geometry import BaseGeometry
+>>> from ..base_geometry import BaseGeometry
 >>> bg = BaseGeometry()
 
 # Test 1
