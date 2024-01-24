@@ -15,7 +15,11 @@ def load_from_json_file(filename):
         return json.load(file)
 
 filename = 'add_item.json'
-my_list = []
+
+try:
+    my_list = load_from_json_file(filename)
+except FileNotfoundError:
+    my_list =[]
 
 for arg in sys.argv[1:]:
     my_list.append(arg)
