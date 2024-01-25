@@ -2,4 +2,4 @@
 """ Class Base """
 
 
-class Base: 
+class Base:
