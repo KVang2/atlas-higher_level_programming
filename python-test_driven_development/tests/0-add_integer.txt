@@ -1,0 +1,15 @@
+'Some tests for the function of add_integer'
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+'test positive number'
+>>> add_integer(9, 10)
+19
+
+'test with float numbers'
+>>> add_integer(4.5, 5.5)
+10
+
+'test with one integer'
+>>> add_integer(2)
+100

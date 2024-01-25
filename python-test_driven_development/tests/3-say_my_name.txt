@@ -1,0 +1,22 @@
+'Test for the function of say_my_name'
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+'test 1'
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+'test 2'
+>>> say_my_name("Walter", "White")
+My name is Walter White
+
+'test 3'
+>>> say_my_name("Bob")
+My name is Bob
+
+'test 4'
+>>> try:
+...	say_my_name(12, "White")
+... except TypeError as e:
+...	str(e)
+first_name must be a string or last_name must be a string
