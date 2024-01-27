@@ -14,4 +14,4 @@ def __init__(self, id=None):
         base.__nb_objects += 1
         self.id = Base.__nb_objects
 
-if __name__ == "__main__"
+if __name__ == "__main__":
