@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""Base class"""
+"""First class Base and attribute"""
 
 
 class Base:
+    """Base class"""
     __nb_objects = 0
 
 def __init__(self, id=None):
