@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """First class Base and attribute"""
-
+import json
 
 class Base:
     """Base class"""
