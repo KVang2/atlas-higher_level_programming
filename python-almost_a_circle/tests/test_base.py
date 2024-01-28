@@ -23,5 +23,6 @@ def test_instance_creation(self):
         b4 = Base(45)
         print(b4.id)
 
+if __name__ == '__main__':
         unittest.main()
 """
