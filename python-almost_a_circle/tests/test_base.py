@@ -3,17 +3,25 @@
 import unittest
 from models.base import Base
 
-if __name__ == "__main__":
+class TestBase(unittest.TestCase):
+    ""
+test case
+    """
 
-b1 = Base()
-print(b1.id)
+def test_instance_creation(self):
+        """Test creation"""
 
-b2 = Base()
-print(b2.id)
+        b1 = Base()
+        print(b1.id)
 
-b3 = Base(32)
-print(b3.id)
+        b2 = Base()
+        print(b2.id)
 
-b4 = Base(45)
-print(b4.id)
+        b3 = Base(32)
+        print(b3.id)
+
+        b4 = Base(45)
+        print(b4.id)
+
+        unittest.main()
 """
