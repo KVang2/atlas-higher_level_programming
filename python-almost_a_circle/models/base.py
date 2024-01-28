@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """First class Base and attribute"""
-import json
+
 
 class Base:
     """Base class"""
     __nb_objects = 0
 
     def __init__(self, id=None):
-    """class attribute"""
+        """class attribute"""
         if id is not None:
             self.id = id
         else:
