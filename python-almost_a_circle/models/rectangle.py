@@ -34,6 +34,16 @@ def height(self, value):
     self.__height = value
 
 @property
+def x(self):
+    """x Getter"""
+    return self.__x
+
+@x.setter
+def x(self, value):
+    """x setter"""
+    self.__x = value
+    
+@property
 def y(self):
     """y Getter"""
     return self.__y
