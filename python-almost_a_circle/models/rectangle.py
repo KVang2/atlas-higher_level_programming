@@ -89,7 +89,7 @@ class Rectangle(Base):
     def update(self, id, width, height, x, y):
         """Upates on Rectangle"""
         self.__id = id
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self._width = width
+        self._height = height
+        self._x = x
+        self._y = y
