@@ -88,8 +88,13 @@ class Rectangle(Base):
 
     def update(self, *args):
         """Upates on Rectangle"""
-        self.__id = args[0]
-        self.__width = args[1]
-        self.__height = args[2]
-        self.__x = args[3]
-        self.__y = args[4]
+        if args >= 1:
+            self.__id = args[0]
+        if args >= 2:
+            self.__width = args[1]
+        if args >= 3:
+            self.__height = args[2]
+        if args >= 4:
+            self.__x = args[3]
+        if args >= 5:
+            self.__y = args[4]
