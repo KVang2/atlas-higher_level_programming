@@ -86,8 +86,8 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.x, self.y, self.width, self.height)
 
-    def update(self, *args):
-        """Upates on Rectangle"""
+    def update(self, *args, **kwargs):
+        """Upates on Rectangle field"""
         if args:
             if len(args) >= 1:
                 self.id = args[0]
