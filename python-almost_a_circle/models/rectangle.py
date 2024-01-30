@@ -78,4 +78,3 @@ class Rectangle(Base):
         """prints in stdout of character #"""
         for _ in range(self.__height):
             print("#" * self.__width)
-
