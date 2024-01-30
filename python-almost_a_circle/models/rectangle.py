@@ -81,5 +81,5 @@ class Rectangle(Base):
 
     def __str__(self):
         """return formatted string"""
-        return f"{self.x}/{self.y} - {self.width}/{self.height}"
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.d, self.x, self.y, self.width, self.height)
     
