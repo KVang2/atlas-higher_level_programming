@@ -39,3 +39,4 @@ class Square(Rectangle):
         else:
             for fields, value in kwargs.items():
                 setattr(self, fields, value)
+
