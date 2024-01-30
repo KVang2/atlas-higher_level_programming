@@ -85,3 +85,4 @@ class Rectangle(Base):
         """return formatted string"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.d, self.x, self.y, self.width, self.height)
+    
