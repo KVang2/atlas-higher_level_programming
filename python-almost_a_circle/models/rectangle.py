@@ -78,3 +78,8 @@ class Rectangle(Base):
         """prints in stdout of character #"""
         for _ in range(self.__height):
             print("#" * self.__width)
+
+    def __str__(self):
+        """return formatted string"""
+        return f"{self.x}/{self.y} - {self.width}/{self.height}"
+    
