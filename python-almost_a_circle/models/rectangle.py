@@ -9,7 +9,6 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """Attribute of width height"""
         super().__init__(id)
-        self.id = id
         self.width = width
         self.height = height
         self.x = x
@@ -89,8 +88,9 @@ class Rectangle(Base):
 
     def update(self, *args):
         """Upates on Rectangle"""
-        self.id = args[0]
-        self.width = args[1]
-        self.height = args[2]
-        self.x = args[3]
-        self.y = args[4]
+        if len(args) >= 5:
+            self.id = args[0]
+            self.width = args[1]
+            self.height = args[2]
+            self.x = args[3]
+            self.y = args[4]
