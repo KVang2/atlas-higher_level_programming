@@ -86,10 +86,10 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.x, self.y, self.width, self.height)
 
-    def update(self, id, width, height, x, y):
+    def update(self, *args):
         """Upates on Rectangle"""
-        self.__id = id
-        self._width = width
-        self._height = height
-        self._x = x
-        self._y = y
+        self.__id = args[0]
+        self.__width = args[1]
+        self.__height = args[2]
+        self.__x = args[3]
+        self.__y = args[4]
