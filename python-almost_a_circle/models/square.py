@@ -2,7 +2,7 @@
 """Class Square that inherits from Rectangle"""
 
 
-class Square(rectangle):
+class Square(Rectangle):
     """Class Sqaure attribute"""
     def __init__(self, size, x=0, y=0, id=None):
         """calling super class"""
