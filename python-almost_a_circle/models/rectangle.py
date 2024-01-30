@@ -85,3 +85,11 @@ class Rectangle(Base):
         """return formatted string"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, id, width, height, x, y):
+        """Upates on Rectangle"""
+        self.__id = id
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
