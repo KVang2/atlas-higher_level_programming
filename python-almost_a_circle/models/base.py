@@ -47,7 +47,7 @@ class Base:
     def create(cls, **dictionary):
         """Classmethod that returns all attributes set"""
         if dictionary != {}:
-            if cls.__name__ == "rectangle":
+            if cls.__name__ == "Rectangle":
                 dummy = cls(1, 1)
             else:
                 dummy = cls(1)
