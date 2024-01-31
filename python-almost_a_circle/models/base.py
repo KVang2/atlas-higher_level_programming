@@ -63,7 +63,7 @@ class Base:
         try:
             with open(filename, 'r') as file:
                 json_data = file.read()
-                list_dicts = json.loads(json_data)
-                return [cls.create(**dictionary) for dictionary in list_dicts]
+                inst_data = cls.from_json_string(json_data)
+                return [cls.create(**inst) for inst in inst_data]
         except FileNotFoundError:
             return []
