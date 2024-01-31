@@ -28,7 +28,9 @@ class Base:
         """writes JSON string representation of list_objs to file"""
         if list_objs is None:
             list_objs = []
+
         field_objects = [obj.to_dict() for obj in list_objs]
-        filename = cls.__name__ + ".json"
+        filename = "{}.json".format(cls.__name__)
+
         with open(filename, 'w') as file:
             json.dump(field_objects, file)
