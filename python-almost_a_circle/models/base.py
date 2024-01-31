@@ -64,5 +64,5 @@ class Base:
             with open(filename, 'r') as file:
                 json_data = file.read()
                 return cls.from_json_string(json_data)
-    except FileNotFoundError:
-        return []
+        except FileNotFoundError:
+            return []
