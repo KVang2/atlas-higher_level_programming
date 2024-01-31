@@ -34,3 +34,11 @@ class Base:
         json_string = cls.to_json_string(field_obj)
         with open(filename, 'w') as file:
             file.write(json_string)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """adding static method that returns list of JSON str"""
+        if json_string is None or json_string == []:
+            return []
+        else:
+            return json.loads(json_string)
