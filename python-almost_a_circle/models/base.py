@@ -29,6 +29,8 @@ class Base:
         if list_obj is None:
             list_objs = []
 
+        json_string = cls.to_json_string(list_objs)
+
         field_objects = [obj.to_dict() for obj in list_objs]
         filename = "output.json"
 
