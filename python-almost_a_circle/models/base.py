@@ -29,8 +29,8 @@ class Base:
         if list_objs is None:
             list_objs = []
 
-        field_objects = [obj.to_dict() for obj in list_objs]
+        field_obj = [obj.to_dict() for obj in list_objs]
         filename = "{}.json".format(cls.__name__)
-
+        json_string = cls.to_json_string(field_obj)
         with open(filename, 'w') as file:
-            json.dump(field_objects, file)
+            file.write(json_string)
