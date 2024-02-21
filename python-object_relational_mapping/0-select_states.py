@@ -7,7 +7,7 @@ import sys
 
 def mysql_connect():
     """Function that connects to the MySQL server"""
-    #Retrieve connection details from cmd-line arg.
+    # Retrieve connection details from cmd-line arg.
     username = sys.argv[1]
     password = sys.argv[2]
     db_name = sys.argv[3]
