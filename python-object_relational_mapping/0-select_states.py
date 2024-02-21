@@ -12,9 +12,9 @@ def mysql_connect():
     db_name = sys.argv[3]
 
     db = MySQLdb.connect(host="localhost",
-            user=usr,
+            user=username,
             port=3306,
-            passwd=pw,
+            passwd=password,
             database=db_name)
 
     mycursor = db.cursor()
