@@ -24,7 +24,7 @@ def main():
     mycursor = db.cursor()
 
     # Execute SQL query to select states starting with 'N' and order by id
-    mycursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+    mycursor.execute("SELECT * FROM states ORDER BY id ASC")
 
     # Fetch all rows returned by query
     rows = mycursor.fetchall()
