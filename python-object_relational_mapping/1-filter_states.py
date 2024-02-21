@@ -38,5 +38,9 @@ def main():
 
     # Check if script is executed directly
 if __name__ == "__main__":
+    # Check if correct number of arg are provided
+    if len(sys.argv) != 4:
+        print("Usage: python script.py <mysql_username> <mysql_password> <database_name>")
+
     # Call main function to execute script
     main()
