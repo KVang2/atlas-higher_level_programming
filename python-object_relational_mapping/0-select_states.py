@@ -21,7 +21,7 @@ def mysql_connect():
 
     mycursor.execute("SELECT * FROM states ORDER BY id ASC")
 
-    rows = cursor.fetchall()
+    rows = mycursor.fetchall()
 
     for row in rows:
         print(row)
