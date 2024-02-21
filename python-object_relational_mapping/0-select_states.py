@@ -19,7 +19,7 @@ def mysql_connect(usr, pw, db_name):
 
     rows = cursor.fetchall()
 
-    for row in rows;
+    for row in rows:
         print(row)
 
     mycursor.close()
