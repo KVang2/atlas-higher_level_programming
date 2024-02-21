@@ -11,6 +11,7 @@ def main():
     username = sys.argv[1]
     password = sys.argv[2]
     db_name = sys.argv[3]
+    searched = sys.argv[4]
 
     """ Connect to MySQL server """
     db = MySQLdb.connect(
@@ -31,7 +32,8 @@ def main():
 
     # Print each row
     for row in rows:
-        print(row)
+        if row[1] == searched:
+            print(row)
 
     mycursor.close()
     db.close()

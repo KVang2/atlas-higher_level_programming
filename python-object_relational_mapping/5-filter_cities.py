@@ -11,6 +11,7 @@ def main():
     username = sys.argv[1]
     password = sys.argv[2]
     db_name = sys.argv[3]
+    searched = sys.argv[4]
 
     """ Connect to MySQL server """
     db = MySQLdb.connect(
