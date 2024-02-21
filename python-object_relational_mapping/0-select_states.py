@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Script that Lists all states from the database hbtn_0e_0_usa"""
 
-import sys
 import MySQLdb
+import sys
 
 
 def mysql_connect(usr, pw, db_name):
@@ -13,7 +13,7 @@ def mysql_connect(usr, pw, db_name):
             passwd=pw,
             database=db_name)
 
-    mycursor = mydb.cursor()
+    mycursor = db.cursor()
 
     mycursor.execute("SELECT * FROM states ORDER BY id")
 
