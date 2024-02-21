@@ -5,8 +5,12 @@ import MySQLdb
 import sys
 
 
-def mysql_connect(usr, pw, db_name):
+def mysql_connect():
     """Function that connects to the MySQL server"""
+    username = sys.argv[1]
+    password = sys.argv[2]
+    db_name = sys.argv[3]
+
     db = MySQLdb.connect(host="localhost",
             user=usr,
             port=3306,
@@ -15,7 +19,7 @@ def mysql_connect(usr, pw, db_name):
 
     mycursor = db.cursor()
 
-    mycursor.execute("SELECT * FROM states ORDER BY id")
+    mycursor.execute("SELECT * FROM states ORDER BY id ASC")
 
     rows = cursor.fetchall()
 
@@ -27,4 +31,4 @@ def mysql_connect(usr, pw, db_name):
 
 
 if __name__ == "__main__":
-    main()
+    mysql_connect()
