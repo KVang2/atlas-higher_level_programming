@@ -20,13 +20,16 @@ def main():
         passwd=password,
         database=db_name)
 
-
+    # Create cursor object to interact with database
     mycursor = db.cursor()
 
+    # Execute SQL query to select states starting with 'N' and order by id
     mycursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
 
+    # Fetch all rows returned by query
     rows = mycursor.fetchall()
 
+    # Print each row
     for row in rows:
         print(row)
 
@@ -35,5 +38,5 @@ def main():
 
     # Check if script is executed directly
 if __name__ == "__main__":
-    # Call mysql_connect function to execute script
+    # Call main function to execute script
     main()
