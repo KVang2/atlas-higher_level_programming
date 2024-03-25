@@ -1,8 +1,5 @@
 #!/usr/bin/node
 
-// Checking if tow arguments are provided
-if (process.argv[2] !== undefined && process.argv[3] !== undefined) {
-    console.log(process.argv[2] + " is " + process.argv[3]);
-} else {
-    console.log('Please provide at least two arguments.')
+function printArguments(arg1, arg2) {
+    console.log(arg1 + ' is ' + arg2);
 }
