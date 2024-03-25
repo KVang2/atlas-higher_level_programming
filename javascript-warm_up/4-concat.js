@@ -1,5 +1,3 @@
 #!/usr/bin/node
-
-function printArguments(arg1, arg2) {
-    console.log(args[2] + ' is ' + args[3]);
-}
+const argv = process.argv;
+console.log(args[2] + ' is ' + args[3]);
