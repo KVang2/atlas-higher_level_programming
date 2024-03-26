@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 const args = process.argv.slice(2).map(arg => parseInt(arg));
-function secondint(int) {
+function secondint (int) {
   if (int.length < 2) {
     return 0;
   }
