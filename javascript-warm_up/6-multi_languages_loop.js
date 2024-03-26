@@ -9,5 +9,5 @@ const array = [
 
 // Looping through array and printing out string
 for (let i = 0; i < array.length; i++) {
-  console.log(array[1]);
+  console.log(array[i]);
 }
