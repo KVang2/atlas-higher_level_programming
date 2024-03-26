@@ -1,23 +1,23 @@
 #!/usr/bin/node
 class Rectangle {
-    constructor (w, h) {
-    if (w <= 0 || h <= 0 || !Number.isInteger(w) || !Number.isInteger(h)) {
+  constructor (w, h) {
+  if (w <= 0 || h <= 0 || !Number.isInteger(w) || !Number.isInteger(h)) {
       return {};
     } else {
       this.width = w;
       this.height = h;
     }
-    }
+  }
 
-    print() {
-        if (this.width && this.height) {
-          for (let i = 0; i < this.height; i++) {
-              console.log('X'.repeat(this.width));
+  print() {
+    if (this.width && this.height) {
+      for (let i = 0; i < this.height; i++) {
+        console.log('X'.repeat(this.width));
             }
         }
     }
 
-    rotate() {
+  rotate() {
         if (this.width && this.height) {
           const temp = this.width;
           this.width = this.height;
