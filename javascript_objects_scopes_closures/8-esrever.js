@@ -13,4 +13,4 @@ exports.esrever = function (list) {
     list[l - 1 - i] = temp;
   }
   return list;
-}
+};
