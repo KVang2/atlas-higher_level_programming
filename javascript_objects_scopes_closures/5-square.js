@@ -8,7 +8,7 @@ class Rectangle {
 
 class Square extends Rectangle {
     constructor (size) {
-        super(Rectangle);
+        super(size, size);
         this.size = size;
     }
 }
