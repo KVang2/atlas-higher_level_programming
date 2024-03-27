@@ -1,5 +1,5 @@
 #!/usr/bin/node
-function exports.nbOccurences = function (list, searchElement) {
+exports.nbOccurences = function (list, searchElement) {
     const occur = {};
 
     for (const ele of list) {
