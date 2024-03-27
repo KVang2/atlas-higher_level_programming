@@ -1,11 +1,5 @@
 #!/usr/bin/node
-class Rectangle {
-    constructor (w, h) {
-      this.width = w;
-      this.height = h;
-    }
-}
-module.exports = Rectangle;
+cl Rectangle = requestAnimationFrame('./rectangle.js');
 
 class Square extends Rectangle {
     constructor (size) {
