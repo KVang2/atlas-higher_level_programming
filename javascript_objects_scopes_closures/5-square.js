@@ -1,5 +1,5 @@
 #!/usr/bin/node
-cl Rectangle = requestAnimationFrame('./4-rectangle.js');
+const Rectangle = require('./4-rectangle.js');
 
 class Square extends Rectangle {
     constructor (size) {
