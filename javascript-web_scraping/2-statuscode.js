@@ -7,11 +7,9 @@ if (!url) {
     process.exit(1);
 }
 
-request.get(url)
-    .then(response => {
-        console.log(response.status);
-    })
-    .catch(error => {
-        console.error('Error:, error occur');
+request.get(url, (error, response) => {
+    if (error) {
+        console.error('Error:', error.msg);
         process.exit(1);
-    });
+    })
+    console.log('response.statusCode');
