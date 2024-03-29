@@ -11,5 +11,6 @@ request.get(url, (error, response) => {
     if (error) {
         console.error('Error:', error.msg);
         process.exit(1);
-    })
+    }
     console.log('response.statusCode');
+});
