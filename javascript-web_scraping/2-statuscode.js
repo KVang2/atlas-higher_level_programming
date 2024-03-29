@@ -12,5 +12,5 @@ request.get(url, (error, response) => {
         console.error('Error:', error.msg);
         process.exit(1);
     }
-    console.log(response.statusCode);
+    console.log('code:', response.statusCode);
 });
