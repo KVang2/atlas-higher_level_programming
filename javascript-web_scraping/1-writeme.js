@@ -8,7 +8,7 @@ if (!filePath || !stringWrite) {
   process.exit(1);
 }
 
-fs.writeFile(filePath, stringWrite,  'utf-8', (err) => {
+fs.writeFile(filePath, stringWrite, 'utf-8', (err) => {
   if (err) {
     console.error(err);
   }
