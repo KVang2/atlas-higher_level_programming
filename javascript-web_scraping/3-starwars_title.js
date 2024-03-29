@@ -10,7 +10,7 @@ if (!arg) {
 const api =  'https://swapi-api.hbtn.io/api/films/${arg}';
 
 request.get(api, (error, response, body) => {
-    if (errror) {
+    if (error) {
         console.error('Error:', error);
         process.exit(1);
     }
