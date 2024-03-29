@@ -15,8 +15,8 @@ request.get(api, (error, response, body) => {
         process.exit(1);
     }
     if (response.statusCode !== 200) {
-        console.error('Error:', response.statusCode, response.Message);
-        porcess.exit(1);
+        console.error('Error:', response.statusCode, response.statusMessage);
+        process.exit(1);
     }
 const movie = JSON.parse(body);
 const title = movie.title;
