@@ -18,6 +18,10 @@ request.get(api, (error, response, body) => {
         console.error('Error:', response.statusCode, response.statusMessage);
         process.exit(1);
     }
+    if (response.statusCode === 404) {
+        console.error('Error: Movie not found');
+        process.exit(1);
+    }
 const movie = JSON.parse(body);
 const title = movie.title;
 console.log('Title:', title);
