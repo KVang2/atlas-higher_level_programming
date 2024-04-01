@@ -24,5 +24,5 @@ request.get(api, (error, response, body) => {
     }
 const movie = JSON.parse(body);
 const title = movie.title;
-console.log('Title:', title);
+console.log(title);
 });
