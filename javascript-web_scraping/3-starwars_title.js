@@ -6,7 +6,7 @@ if (!arg) {
   console.error('Error: no URL');
   process.exit(1);
 }
-const api =`https://swapi-api.hbtn.io/api/films/${arg}`;
+const api = `https://swapi-api.hbtn.io/api/films/${arg}`;
 
 request.get(api, (error, response, body) => {
   if (error) {
