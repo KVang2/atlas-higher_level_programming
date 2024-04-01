@@ -2,7 +2,6 @@
 const request = require('request');
 const api = process.argv[2];
 const charId = 18
-const charApiUrl = `https://swapi-api.hbtn.io/api/people/${charId}/`;
 
 if (!api) {
     console.log('Error: no URL');
@@ -23,7 +22,7 @@ request.get(api, (error, response, body) => {
   let movieCount = 0;
 
 films.forEach((movie) => {
-    if (movie.characters.includes(charApiUrl)) {
+    if (movie.characters.includes(`https://swapi-api.hbtn.io/api/people/${charId}/`)) {
         movieCount++;
     }
   });
