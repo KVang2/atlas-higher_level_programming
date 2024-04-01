@@ -6,7 +6,7 @@ if (!arg) {
   console.error('Error: no URL');
   process.exit(1);
 }
-const api =  `https://swapi-api.hbtn.io/api/films/${arg}`;
+const api =`https://swapi-api.hbtn.io/api/films/${arg}`;
 
 request.get(api, (error, response, body) => {
   if (error) {
@@ -22,7 +22,7 @@ request.get(api, (error, response, body) => {
     console.error('Error: not found');
     process.exit(1);
   }
-const movie = JSON.parse(body);
-const title = movie.title;
-console.log(title);
+  const movie = JSON.parse(body);
+  const title = movie.title;
+  console.log(title);
 });
