@@ -14,7 +14,7 @@ request.get(api, (error, response, body) => {
   }
 
   if (response.statusCode !== 200) {
-    console.error('Error:', response.statusCode, reponse.statusMessage);
+    console.error('Error:', response.statusCode, response.statusMessage);
     process.exit(1);
   }
 
