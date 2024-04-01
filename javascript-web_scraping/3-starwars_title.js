@@ -18,7 +18,7 @@ request.get(api, (error, response, body) => {
         console.error('Error:', response.statusCode, response.statusMessage);
         process.exit(1);
     }
-    if (response.statusCode !== 404) {
+    if (response.statusCode === 404) {
         console.error('Error: not found');
         process.exit(1);
     }
