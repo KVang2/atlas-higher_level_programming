@@ -22,7 +22,7 @@ request.get(api, (error, response, body) => {
   let movieCount = 0;
 
 films.forEach((movie) => {
-    if (movie.characters.includes('https://swapi-api.hbtn.io/api/people/${charId}/')) {
+    if (movie.characters.includes(`https://swapi-api.hbtn.io/api/people/${charId}/`)) {
         movieCount++;
     }
   });
