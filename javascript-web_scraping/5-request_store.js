@@ -16,7 +16,7 @@ request.get(url, (error, response, body) => {
   }
 
   if (response.statusCode !== 200) {
-    console.error('Failed:', response.statusCode);
+    console.error(response.statusCode);
     process.exit(1);
   }
 
@@ -25,7 +25,7 @@ request.get(url, (error, response, body) => {
       console.error('Error:', err);
       process.exit(1);
     }
-    console.log('filePath');
+    console.log(filePath);
     process.exit(0);
   });
 });
