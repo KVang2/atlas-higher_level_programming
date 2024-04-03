@@ -5,7 +5,7 @@ const url = process.argv[2];
 const filePath = process.argv[3];
 
 if (!url) {
-  console.log('Error: no URL');
+  console.log('Error');
   process.exit(1);
 }
 
@@ -25,7 +25,7 @@ request.get(url, (error, response, body) => {
       console.error('Error:', err);
       process.exit(1);
     }
-    console.log('Data written', filePath);
+    console.log('filePath');
     process.exit(0);
   });
 });
