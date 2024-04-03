@@ -19,7 +19,7 @@ request.get(url, (error, response, body) => {
     }
 
     const todos = JSON.parse(body);
-    const completeTasks = {};
+    const completedTasks = {};
 
     todos.forEach((task) => {
         if (task.completed) {
@@ -29,7 +29,6 @@ request.get(url, (error, response, body) => {
                 completedTasks[task.userId] = 1;
             }
         }
-      }
     });
     console.log(completedTasks);
 });
