@@ -27,8 +27,8 @@ request.get(url, (error, response, body) => {
         completedTasks[task.userId]++;
       } else {
         completedTasks[task.userId] = 1;
-        }
       }
+    }
   });
 
   console.log(completedTasks);
