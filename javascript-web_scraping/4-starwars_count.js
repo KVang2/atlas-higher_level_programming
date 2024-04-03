@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const request = require('request');
 const api = process.argv[2];
-const charId = 18
+const charId = 18;
 
 if (!api) {
   console.log('Error: no URL');
