@@ -4,6 +4,11 @@ const request = require ('request');
 const url = process.argv[2];
 const filePath = process.argv[3];
 
+if (!url) {
+  console.log('Error: no URL');
+  process.exit(1);
+}
+
 request.get(url, (error, response, body) => {
   if (error) {
     console.error('Error:', error);
