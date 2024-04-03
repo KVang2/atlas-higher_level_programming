@@ -21,11 +21,11 @@ request.get(api, (error, response, body) => {
   const films = JSON.parse(body).results;
   let movieCount = 0;
 
-films.forEach((movie) => {
-  if (movie.characters.includes(`https://swapi-api.hbtn.io/api/people/${charId}/`)) {
-    movieCount++;
-  }
-});
+  films.forEach((movie) => {
+    if (movie.characters.includes(`https://swapi-api.hbtn.io/api/people/${charId}/`)) {
+      movieCount++;
+    }
+  });
 
   console.log(movieCount);
 });
