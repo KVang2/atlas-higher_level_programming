@@ -25,7 +25,6 @@ request.get(url, (error, response, body) => {
       console.error('Error:', err);
       process.exit(1);
     }
-    console.log(filePath);
     process.exit(0);
   });
 });
